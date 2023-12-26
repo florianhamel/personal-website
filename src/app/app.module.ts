@@ -9,9 +9,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { SkillsComponent } from './components/skills/skills.component';
 import { CommonModule } from '@angular/common';
 import { MediaComponent } from './components/media/media.component';
-import { MatIconModule } from '@angular/material/icon';
 import { HobbiesComponent } from './components/hobbies/hobbies.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RouterOutlet } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 function TranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -29,6 +30,7 @@ function TranslateLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    AppRoutingModule,
     BrowserModule,
     CommonModule,
     HttpClientModule,
@@ -36,9 +38,9 @@ function TranslateLoaderFactory(http: HttpClient) {
     HeaderComponent,
     SkillsComponent,
     MediaComponent,
-    MatIconModule,
     HobbiesComponent,
-    FooterComponent
+    FooterComponent,
+    RouterOutlet
   ]
 })
 export class AppModule {

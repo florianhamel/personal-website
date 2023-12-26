@@ -13,8 +13,7 @@ import { Medium } from '../../models/types';
   imports: [
     LinkedinSvgComponent, GithubSvgComponent, MaltSvgComponent, TranslateModule, MediaSvgComponent, NgComponentOutlet
   ],
-  templateUrl: './media.component.html',
-  styleUrl: './media.component.html'
+  templateUrl: './media.component.html'
 })
 export class MediaComponent {
   readonly media: Medium[] = [

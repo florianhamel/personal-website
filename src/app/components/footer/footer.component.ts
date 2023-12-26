@@ -5,10 +5,8 @@ import { copyrightUni } from '../../models/constants';
   selector: 'app-footer',
   standalone: true,
   imports: [],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  templateUrl: './footer.component.html'
 })
 export class FooterComponent {
-
-  protected readonly copyrightUni = copyrightUni;
+  protected readonly copyrights: string = `${copyrightUni} 2024 florianhamel.com | All rights reserved`;
 }

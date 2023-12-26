@@ -3,8 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
   constructor(private readonly translateService: TranslateService) {
@@ -12,5 +11,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.translateService.setDefaultLang('en');
+    this.translateService.use('en');
   }
 }

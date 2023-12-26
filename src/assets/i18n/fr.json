@@ -24,5 +24,9 @@
     "meditation": "Méditation",
     "videoGames": "Jeux vidéo",
     "communication": "Communication"
+  },
+  "pageNotFound": {
+    "intro": "On dirait bien une 404",
+    "journey": "C'est rien, se perdre fait partie du chemin !"
   }
 }

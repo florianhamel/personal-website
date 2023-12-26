@@ -8,8 +8,7 @@ import { Skill } from '../../models/types';
   selector: 'app-skills',
   standalone: true,
   imports: [CommonModule, SkillsSvgComponent, TranslateModule],
-  templateUrl: './skills.component.html',
-  styleUrl: './skills.component.css'
+  templateUrl: './skills.component.html'
 })
 export class SkillsComponent {
   readonly skills: Skill[] = [

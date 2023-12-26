@@ -1,30 +1,30 @@
 <!-- Component -->
-<div class="flex flex-col gap-4 mt-16">
-    <div class="flex items-center gap-6">
-        <app-dev-svg />
-        <div>
-            <ng-container [ngTemplateOutlet]="nameRef" />
-            <ng-container [ngTemplateOutlet]="titleRef" />
-        </div>
+<div class="flex flex-col gap-4">
+  <div class="flex items-center gap-6">
+    <app-dev-svg />
+    <div>
+      <ng-container [ngTemplateOutlet]="nameRef" />
+      <ng-container [ngTemplateOutlet]="titleRef" />
     </div>
-    <ng-container [ngTemplateOutlet]="detailsRef" />
+  </div>
+  <ng-container [ngTemplateOutlet]="detailsRef" />
 </div>
 
 <!-- Templates -->
 <ng-template #nameRef>
-    <p class="name">{{ 'intro.name' | translate }}</p>
+  <p class="text-4xl">{{ 'intro.name' | translate }}</p>
 </ng-template>
 
 <ng-template #titleRef>
-    <div class="title">
-        <span>{{ 'intro.title' | translate }}</span>
-        <span> | </span>
-        <span>in</span>
-        <app-heart-svg />
-        <span>with Angular & TypeScript</span>
-    </div>
+  <div class="flex gap-2 text-3xl">
+    <span>{{ 'intro.title' | translate }}</span>
+    <span> | </span>
+    <span>in</span>
+    <app-heart-svg />
+    <span>with Angular & TypeScript</span>
+  </div>
 </ng-template>
 
 <ng-template #detailsRef>
-    <p class="details text-block">{{ arrowUnicode }} {{ 'intro.details' | translate }}</p>
+  <p class="text-block">{{ arrowUni }} {{ 'intro.details' | translate }}</p>
 </ng-template>

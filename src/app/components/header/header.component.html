@@ -1,23 +1,15 @@
-<header>
-    <nav>
-        @for (item of items; track item.anchor) {
-            <span class="clickable-item nav-item">{{ item.titleKey | translate }}</span>
-        }
-    </nav>
-    <button [cdkMenuTriggerFor]="translationMenu"
-            class="translation">
-        <mat-icon inline="true">translate</mat-icon>
+<header class="flex justify-between items-center text-white border-b border-black bg-[--primary-color]">
+  <nav class="flex items-center ml-14 h-20">
+    @for (item of items; track $index) {
+      <a [routerLink]="item.route" class="drop-shadow hover:cursor-pointer active:drop-shadow-none">
+        {{ item.titleKey | translate }}
+      </a>
+    }
+  </nav>
+  <div class="flex items-center mr-14 drop-shadow hover:cursor-pointer active:drop-shadow-none">
+    <button (click)="handleClick()" class="flex items-center gap-1">
+      <app-translation-svg />
+      <span>{{ languages.get(currentLang)!.name }}</span>
     </button>
+  </div>
 </header>
-
-<ng-template #translationMenu>
-    <div cdkMenu
-         class="translation-menu">
-        @for (language of languages; track language.name) {
-            <button cdkMenuItem
-                    (click)="handleClick(language.value)"
-                    class="translation-menu-item">{{ language.flag }} {{ language.name }}
-            </button>
-        }
-    </div>
-</ng-template>

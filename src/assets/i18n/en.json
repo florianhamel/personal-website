@@ -25,5 +25,9 @@
     "meditation": "Meditation",
     "videoGames": "Video Games",
     "communication": "Communication"
+  },
+  "pageNotFound": {
+    "intro": "It looks like a 404",
+    "journey": "It's okay, getting lost is part of the journey !"
   }
 }

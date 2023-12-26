@@ -1,12 +1,7 @@
 <app-header />
-<div class="flex flex-col justify-between h-full">
-    <div class="flex flex-col mx-auto w-3/4">
-        <app-intro />
-        <div class="flex justify-between gap-8 mt-6">
-            <app-skills />
-            <app-hobbies />
-        </div>
-        <app-media class="mt-12" />
-    </div>
-    <app-footer />
+<div class="flex flex-col justify-between h-fit min-h-[100vh]">
+  <div class="w-3/4 mx-auto mt-12">
+    <router-outlet />
+  </div>
+  <app-footer class="mt-16 mb-4" />
 </div>

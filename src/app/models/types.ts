@@ -11,17 +11,17 @@ export type Skill = {
 export type Hobby = {
   key: string;
   size: Size;
+  link?: string;
 };
 
 export type NavItem = {
   titleKey: string;
-  anchor: string;
+  route: string;
 };
 
 export type Language = {
   flag: string;
   name: string;
-  value: string;
 }
 
 export type Medium = {

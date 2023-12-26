@@ -1,13 +1,13 @@
 <div class="flex items-center gap-8">
-    <div class="flex items-center gap-2">
-        <app-media-svg />
-        <div>{{ 'intro.media' | translate }}</div>
-    </div>
-    @for (medium of media; track $index) {
-        <a class="clickable-block"
-           [href]="medium.link"
-           target="_blank">
-            <ng-container [ngComponentOutlet]="medium.component" />
-        </a>
-    }
+  <div class="flex items-center gap-2">
+    <app-media-svg />
+    <div>{{ 'intro.media' | translate }}</div>
+  </div>
+  @for (medium of media; track $index) {
+    <a class="clickable-block"
+       [href]="medium.link"
+       target="_blank">
+      <ng-container [ngComponentOutlet]="medium.component" />
+    </a>
+  }
 </div>

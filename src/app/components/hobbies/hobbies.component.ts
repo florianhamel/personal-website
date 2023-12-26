@@ -9,8 +9,7 @@ import { HeartSvgComponent } from '../svgs/heart-svg/heart-svg.component';
   selector: 'app-hobbies',
   standalone: true,
   imports: [SkillsSvgComponent, TranslateModule, HobbiesSvgComponent, HeartSvgComponent],
-  templateUrl: './hobbies.component.html',
-  styleUrl: './hobbies.component.css'
+  templateUrl: './hobbies.component.html'
 })
 export class HobbiesComponent {
   readonly hobbies: Hobby[] = [

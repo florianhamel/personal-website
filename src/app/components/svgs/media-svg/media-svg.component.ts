@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-media-svg',
   standalone: true,
   imports: [],
-  templateUrl: './media-svg.component.svg',
+  templateUrl: './media-svg.component.svg'
 })
 export class MediaSvgComponent {
 
