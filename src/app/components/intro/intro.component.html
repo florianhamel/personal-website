@@ -1,6 +1,6 @@
 <!-- Component -->
-<div class="flex flex-col gap-4">
-  <div class="flex items-center gap-6">
+<div class="flex flex-col gap-3">
+  <div class="flex items-center gap-6 sm:flex-col sm:items-start sm:gap-1">
     <app-dev-svg />
     <div>
       <ng-container [ngTemplateOutlet]="nameRef" />
@@ -12,16 +12,20 @@
 
 <!-- Templates -->
 <ng-template #nameRef>
-  <p class="text-4xl">{{ 'intro.name' | translate }}</p>
+  <p class="text-4xl sm:text-3xl sm:mt-4 sm:mb-2">{{ 'intro.name' | translate }}</p>
 </ng-template>
 
 <ng-template #titleRef>
-  <div class="flex gap-2 text-3xl">
-    <span>{{ 'intro.title' | translate }}</span>
-    <span> | </span>
-    <span>in</span>
-    <app-heart-svg />
-    <span>with Angular & TypeScript</span>
+  <div class="flex gap-2 text-2xl sm:flex-col sm:text-xl">
+    <div>
+      <span>{{ 'intro.title' | translate }}</span>
+    </div>
+    <div class="flex gap-2 sm:items-center">
+      <span class="sm:hidden"> | </span>
+      <span>in</span>
+      <app-heart-svg />
+      <span>with Angular & TypeScript</span>
+    </div>
   </div>
 </ng-template>
 
