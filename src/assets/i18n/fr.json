@@ -1,0 +1,28 @@
+{
+  "intro": {
+    "name": "Hello, moi c'est Flo !",
+    "title": "Développeur fullstack basé à Paris",
+    "details": "Développeur web passionné, le code fait partie intégrante de mon quotidien au travail ou dans mes projets personnels. Portant un vif intérêt à la communication, je m’adapte vite aux environnements nouveaux et j’apprécie travailler en équipe ; designer et implémenter du code propre et scalable est ce qui m’anime en tant que développeur.",
+    "skills": "Quelques compétences",
+    "hobbies": "Et quelques passe-temps",
+    "media": "Retrouvez-moi sur Linkedin, Github ou Malt !"
+  },
+  "header": {
+    "intro": "<FlorianHamel />",
+    "about": "À propos"
+  },
+  "hobbies": {
+    "psychology": "Psychologie",
+    "running": "Course à pied",
+    "swimming": "Natation",
+    "philosophy": "Philosophie",
+    "animation": "Animation",
+    "typing": "Typing",
+    "physics": "Physique",
+    "nonDuality": "Non-dualité",
+    "tea": "Thé",
+    "meditation": "Méditation",
+    "videoGames": "Jeux vidéo",
+    "communication": "Communication"
+  }
+}

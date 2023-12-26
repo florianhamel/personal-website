@@ -1,0 +1,23 @@
+<header>
+    <nav>
+        @for (item of items; track item.anchor) {
+            <span class="clickable-item nav-item">{{ item.titleKey | translate }}</span>
+        }
+    </nav>
+    <button [cdkMenuTriggerFor]="translationMenu"
+            class="translation">
+        <mat-icon inline="true">translate</mat-icon>
+    </button>
+</header>
+
+<ng-template #translationMenu>
+    <div cdkMenu
+         class="translation-menu">
+        @for (language of languages; track language.name) {
+            <button cdkMenuItem
+                    (click)="handleClick(language.value)"
+                    class="translation-menu-item">{{ language.flag }} {{ language.name }}
+            </button>
+        }
+    </div>
+</ng-template>

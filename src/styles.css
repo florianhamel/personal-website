@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+@import './variables.css';
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--light-secondary-color);
+    font-size: var(--base-font-size);
+}
+
+.primary-font {
+    font-family: var(--primary-font);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.text-block {
+    color: var(--smooth-black);
+    font-size: var(--base-font-size);
+    width: fit-content;
+    padding: 16px;
+    border: var(--black-border);
+    border-radius: var(--small-border-radius);
+    background-color: #fff;
+    box-shadow: var(--primary-shadow);
+}
+
+.clickable-block {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    transition: box-shadow 100ms ease-in-out;
+    border: var(--black-border);
+    border-radius: var(--small-border-radius);
+    background-color: #fff;
+    box-shadow: var(--secondary-shadow);
+}
+
+.clickable-block:hover {
+    cursor: pointer;
+    box-shadow: var(--primary-shadow);
+}
+
+.subjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 580px;
+    min-height: 200px;
+    gap: 1rem;
+}
+
+/* Sizes */
+.xs {
+    font-size: 0.75rem;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 1.25rem;
+}
+
+.lg {
+    font-size: 1.5rem;
+}
+
+.xl {
+    font-size: 1.75rem;
+}
+
+.xxl {
+    font-size: 2rem;
+}

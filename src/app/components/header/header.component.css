@@ -1,0 +1,78 @@
+/*TODO 2kb and 4kb try again with those values*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--black-border);
+    background-color: var(--primary-color);
+}
+
+nav {
+    font-size: var(--base-font-size);
+    display: flex;
+    align-items: center;
+    height: 75px;
+    margin-left: 50px;
+    gap: 20px;
+}
+
+.nav-item {
+    width: fit-content;
+    height: fit-content;
+    padding: 0 5px;
+    transition: text-shadow 100ms ease-in-out, text-decoration 100ms ease-in-out;
+    color: #fff;
+    border-radius: var(--small-border-radius);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.nav-item:active {
+    text-shadow: none;
+}
+
+.translation {
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+    padding: 0 3px;
+    transition: box-shadow 100ms ease-in-out;
+    color: var(--smooth-black);
+    border: var(--black-border);
+    border-radius: var(--small-border-radius);
+    background-color: #fff;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.translation:hover {
+    cursor: pointer;
+}
+
+.translation:active {
+    box-shadow: none;
+}
+
+.translation-menu {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 8px;
+    padding: 12px;
+    border: var(--black-border);
+    border-radius: var(--small-border-radius);
+    background-color: #fff;
+    box-shadow: var(--secondary-shadow);
+    gap: 10px;
+}
+
+.translation-menu-item {
+    font-size: var(--base-font-size);
+}
+
+.translation-menu-item:hover {
+    text-decoration: underline;
+}

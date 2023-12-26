@@ -1,0 +1,29 @@
+{
+  "intro": {
+    "name": "Hello, I'm Flo!",
+    "title": "Fullstack developer based in Paris",
+    "localisation": "Based in Paris",
+    "details": "Passionate about web development, code is an integral part of my daily life at work or in my personal projects. Having a keen interest in communication, I adapt quickly to new environments and I enjoy working in a team; designing and implementing clean, scalable code is what drives me as a developer.",
+    "skills": "Some skills",
+    "hobbies": "And some hobbies",
+    "media": "Reach me on Linkedin, Github or Malt!"
+  },
+  "header": {
+    "intro": "<FlorianHamel />",
+    "about": "About"
+  },
+  "hobbies": {
+    "psychology": "Psychology",
+    "running": "Running",
+    "swimming": "Swimming",
+    "philosophy": "Philosophy",
+    "animation": "Animation",
+    "typing": "Typing",
+    "physics": "Physics",
+    "nonDuality": "Non-duality",
+    "tea": "Tea",
+    "meditation": "Meditation",
+    "videoGames": "Video Games",
+    "communication": "Communication"
+  }
+}
