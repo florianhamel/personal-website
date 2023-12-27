@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
     private readonly translateService: TranslateService,
     private readonly loadingService: LoadingService
   ) {
-    effect(() => console.log('from app.component', this.loadingService.isLoading()));
   }
 
   ngOnInit(): void {

@@ -1,12 +1,12 @@
-<header class="flex justify-between items-center bg-primary text-white border-b border-black">
-  <nav class="flex items-center ml-14 h-20 sm:ml-5">
+<header class="flex items-center justify-between border-b border-black text-xl text-white bg-primary">
+  <nav class="ml-14 flex h-20 items-center sm:ml-5">
     @for (item of items; track $index) {
       <a [routerLink]="item.route" class="drop-shadow hover:cursor-pointer active:drop-shadow-none">
         {{ item.titleKey | translate }}
       </a>
     }
   </nav>
-  <div class="flex items-center mr-14 drop-shadow hover:cursor-pointer active:drop-shadow-none sm:mr-5">
+  <div class="mr-14 flex items-center drop-shadow hover:cursor-pointer active:drop-shadow-none sm:mr-5">
     <button (click)="handleClick()" class="flex items-center gap-1">
       <app-translation-svg />
       <span>{{ languages.get(currentLang)!.name }}</span>

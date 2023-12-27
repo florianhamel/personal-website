@@ -7,7 +7,7 @@
 
 body {
   font-family: var(--primary-font);
-  font-size: 1.25rem;
+  /*font-size: 1.25rem;*/
   background-color: var(--light-secondary-color);
 }
 
