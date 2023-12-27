@@ -2,7 +2,6 @@
   font-family: 'Noto Sans';
   src: url('/assets/fonts/noto_sans/noto_sans_var.woff2') format('.woff2');
   src: url('/assets/fonts/noto_sans/noto_sans_var.ttf') format('.ttf');
-
 }
 
 @font-face {

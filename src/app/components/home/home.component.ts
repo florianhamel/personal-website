@@ -16,5 +16,4 @@ import { SkillsComponent } from '../skills/skills.component';
   templateUrl: './home.component.html',
 })
 export class HomeComponent {
-
 }

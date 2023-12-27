@@ -3,6 +3,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Language, NavItem } from '../../models/types';
 import { TranslationSvgComponent } from '../svgs/translation-svg/translation-svg.component';
 import { RouterLink } from '@angular/router';
+import { LoadingService } from '../../services/loading.service';
 
 type Lang = 'en' | 'fr';
 
@@ -13,7 +14,6 @@ type Lang = 'en' | 'fr';
   templateUrl: './header.component.html'
 })
 export class HeaderComponent implements OnInit {
-
   currentLang!: Lang;
 
   readonly items: NavItem[] = [
@@ -25,7 +25,8 @@ export class HeaderComponent implements OnInit {
     ['fr', { flag: '🇫🇷', name: 'Français' }]
   ]);
 
-  constructor(private readonly translateService: TranslateService) {
+  constructor(private readonly translateService: TranslateService,
+              private readonly loadingService: LoadingService) {
   }
 
   ngOnInit(): void {
@@ -34,6 +35,13 @@ export class HeaderComponent implements OnInit {
 
   handleClick(): void {
     this.currentLang = (this.currentLang === 'en') ? 'fr' : 'en';
-    this.translateService.use(this.currentLang);
+    this.loadingService.isLoading = true;
+    this.translateService.get(this.currentLang).subscribe({
+      complete: () => {
+        this.translateService.use(this.currentLang)
+        this.loadingService.isLoading = false;
+      }
+    })
+
   }
 }

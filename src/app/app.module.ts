@@ -13,6 +13,8 @@ import { HobbiesComponent } from './components/hobbies/hobbies.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterOutlet } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { LoadingSvgComponent } from './components/svgs/loading-svg/loading-svg.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 function TranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -30,6 +32,7 @@ function TranslateLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    BrowserAnimationsModule,
     AppRoutingModule,
     BrowserModule,
     CommonModule,
@@ -40,7 +43,8 @@ function TranslateLoaderFactory(http: HttpClient) {
     MediaComponent,
     HobbiesComponent,
     FooterComponent,
-    RouterOutlet
+    RouterOutlet,
+    LoadingSvgComponent
   ]
 })
 export class AppModule {
