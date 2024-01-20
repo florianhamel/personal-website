@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './malt-svg.component.svg'
 })
-export class MaltSvgComponent {
-
-}
+export class MaltSvgComponent {}

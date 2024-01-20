@@ -11,7 +11,12 @@ import { Medium } from '../../models/types';
   selector: 'app-media',
   standalone: true,
   imports: [
-    LinkedinSvgComponent, GithubSvgComponent, MaltSvgComponent, TranslateModule, MediaSvgComponent, NgComponentOutlet
+    LinkedinSvgComponent,
+    GithubSvgComponent,
+    MaltSvgComponent,
+    TranslateModule,
+    MediaSvgComponent,
+    NgComponentOutlet
   ],
   templateUrl: './media.component.html'
 })
