@@ -5,58 +5,18 @@
 @tailwind utilities;
 @tailwind components;
 
-body {
-  font-family: var(--primary-font);
-  /*font-size: 1.25rem;*/
-  background-color: var(--light-secondary-color);
-}
+@layer components {
+  .text-block {
+    @apply text-lg w-fit p-4 text-smooth-black border border-black rounded-xs shadow-md shadow-primary bg-white
+  }
 
-.primary-font {
-  font-family: var(--primary-font);
-}
+  .clickable-block {
+    @apply w-fit h-fit p-1 transition-shadow border border-black rounded-xs bg-white shadow-sm shadow-primary hover:shadow-secondary hover:cursor-pointer
+  }
 
-.primary-color {
-  color: var(--primary-color);
-}
-
-.secondary-color {
-  color: var(--secondary-color);
-}
-
-.text-block {
-  font-size: var(--base-font-size);
-  width: fit-content;
-  padding: 1rem;
-  color: var(--smooth-black);
-  border: var(--black-border);
-  border-radius: var(--small-border-radius);
-  background-color: #fff;
-  box-shadow: var(--primary-shadow);
-}
-
-.clickable-block {
-  width: fit-content;
-  height: fit-content;
-  padding: 0.25rem;
-  transition: box-shadow 100ms ease-in-out;
-  border: var(--black-border);
-  border-radius: var(--small-border-radius);
-  background-color: #fff;
-  box-shadow: var(--secondary-shadow);
-}
-
-.clickable-block:hover {
-  cursor: pointer;
-  box-shadow: var(--primary-shadow);
-}
-
-.subjects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 580px;
-  min-height: 200px;
-  gap: 1rem;
+  .subjects {
+    @apply flex flex-wrap justify-center gap-4 max-w-[580px] min-h-[200px]
+  }
 }
 
 /* Sizes */

@@ -14,20 +14,5 @@
 }
 
 :root {
-  /*    Fonts */
-  --primary-font: 'Avenir Next';
-  --base-font-size: 1.25rem;
-
-  /*    Colors */
-  --primary-color: #96d7c8;
-  --secondary-color: #d796a5;
-
-  --light-secondary-color: #faf2f4;
-  --smooth-black: rgba(0, 0, 0, 0.8);
-
-  /*    Borders */
-  --black-border: 1px solid #000;
-  --primary-shadow: 8px 8px 0 var(--primary-color);
-  --secondary-shadow: 8px 8px 0 var(--secondary-color);
-  --small-border-radius: 2px;
+  --primary-font: 'Noto Sans';
 }

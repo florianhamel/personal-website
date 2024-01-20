@@ -8,5 +8,5 @@ import { copyrightUni } from '../../models/constants';
   templateUrl: './footer.component.html'
 })
 export class FooterComponent {
-  protected readonly copyrights: string = `${copyrightUni} 2024 florianhamel.com | All rights reserved`;
+  protected readonly copyrights: string = `${copyrightUni} florianhamel.com`;
 }

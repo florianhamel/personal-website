@@ -3,19 +3,19 @@
   <div class="flex items-center gap-6 sm:flex-col sm:items-start sm:gap-1">
     <app-dev-svg />
     <div>
-      <ng-container [ngTemplateOutlet]="nameRef" />
-      <ng-container [ngTemplateOutlet]="titleRef" />
+      <ng-container [ngTemplateOutlet]="nameTmpl" />
+      <ng-container [ngTemplateOutlet]="titleTmpl" />
     </div>
   </div>
-  <ng-container [ngTemplateOutlet]="detailsRef" />
+  <ng-container [ngTemplateOutlet]="detailsTmpl" />
 </div>
 
 <!-- Templates -->
-<ng-template #nameRef>
-  <p class="text-4xl sm:text-3xl sm:mt-4 sm:mb-2">{{ 'intro.name' | translate }}</p>
+<ng-template #nameTmpl>
+  <p class="text-4xl mb-2 sm:text-3xl sm:mt-4">{{ 'intro.name' | translate }}</p>
 </ng-template>
 
-<ng-template #titleRef>
+<ng-template #titleTmpl>
   <div class="flex gap-2 text-2xl sm:flex-col sm:text-xl">
     <div>
       <span>{{ 'intro.title' | translate }}</span>
@@ -29,6 +29,6 @@
   </div>
 </ng-template>
 
-<ng-template #detailsRef>
+<ng-template #detailsTmpl>
   <p class="text-block">{{ arrowUni }} {{ 'intro.details' | translate }}</p>
 </ng-template>
