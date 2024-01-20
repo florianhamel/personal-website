@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './loading-svg.component.svg'
 })
-export class LoadingSvgComponent {
-
-}
+export class LoadingSvgComponent {}

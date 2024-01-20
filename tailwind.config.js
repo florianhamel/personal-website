@@ -10,9 +10,9 @@ module.exports = {
         primary: 'var(primary-font)'
       },
       colors: {
-        primary: '#3D88D8',
-        secondary: '#C0D696',
-        'primary-light': '#FEFAF7',
+        primary: '#96d7c8',
+        secondary: '#d796a5',
+        'primary-light': '#fefaf7',
         'smooth-black': 'rgba(0, 0, 0, 0.8)'
       },
       borderRadius: {
